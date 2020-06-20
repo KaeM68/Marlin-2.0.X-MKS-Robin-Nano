@@ -380,15 +380,15 @@
   #error "ABL_PROBE_PT_[123]_[XY] is no longer required. Please remove it from Configuration.h."
 #elif defined(UBL_PROBE_PT_1_X) || defined(UBL_PROBE_PT_1_Y) || defined(UBL_PROBE_PT_2_X) || defined(UBL_PROBE_PT_2_Y) || defined(UBL_PROBE_PT_3_X) || defined(UBL_PROBE_PT_3_Y)
   #error "UBL_PROBE_PT_[123]_[XY] is no longer required. Please remove it from Configuration.h."
-#elif defined(MIN_PROBE_EDGE)
+#elif defined(PROBING_MARGIN)
   #error "MIN_PROBE_EDGE is now called PROBING_MARGIN. Please update your configuration."
-#elif defined(MIN_PROBE_EDGE_LEFT)
+#elif defined(PROBING_MARGIN_LEFT)
   #error "MIN_PROBE_EDGE_LEFT is now called PROBING_MARGIN_LEFT. Please update your configuration."
-#elif defined(MIN_PROBE_EDGE_RIGHT)
+#elif defined(PROBING_MARGIN_RIGHT)
   #error "MIN_PROBE_EDGE_RIGHT is now called PROBING_MARGIN_RIGHT. Please update your configuration."
-#elif defined(MIN_PROBE_EDGE_FRONT)
+#elif defined(PROBING_MARGIN_FRONT)
   #error "MIN_PROBE_EDGE_FRONT is now called PROBING_MARGIN_FRONT. Please update your configuration."
-#elif defined(MIN_PROBE_EDGE_BACK)
+#elif defined(PROBING_MARGIN_BACK)
   #error "MIN_PROBE_EDGE_BACK is now called PROBING_MARGIN_BACK. Please update your configuration."
 #elif defined(LEFT_PROBE_BED_POSITION)
   #error "LEFT_PROBE_BED_POSITION is obsolete. Set a margin with PROBING_MARGIN or PROBING_MARGIN_LEFT instead."
